@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="dvMap" style="width: 500px; height: 500px">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 formcontrol"  >
+                <label>
+                    Source
+                </label>
+                <input type="text"   id="myText"/>
+            </div>
+            <div class="col-sm-6 formcontrol">
+                <label>
+                   destination
+                </label>
+                <input type="text" id="myText1"  />
+
+            </div>
+        </div>
+
+    </div>
+   
+
+    <script>
+        var markers = @Html.Raw(ViewBag.Markers);
+    </script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRM_i_vZbKeC6cw1xeWukUjpnYsrNIeco"></script>
+    <script src="~/content/js/maps.js"></script>
+
+  
+
+    
+</body>
+</html>
